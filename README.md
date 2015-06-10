@@ -10,7 +10,7 @@ Switch logging services on and off in any project by simply setting environment 
 #### Set the following environment variables to turn on any of the services below
 
 ##### Slack 
-`SLACK_LOG_WEBHOOK`
+`SLACK_LOG_HOOK`
 
 `SLACK_LOG_CHANNEL`
 
