@@ -46,8 +46,8 @@ function logger(name) {
   if (SLACK_WEBHOOK && SLACK_CHANNEL) {
     logger.use(slack, {
       level: 'warn',
-      webhook_url: SLACK_WEBHOOK,
-      channel: SLACK_CHANNEL,
+      webhook_url: SLACK_LOG_WEBHOOK,
+      channel: SLACK_LOG_CHANNEL || '#' + name,
       customFormatter: slackFormatter
     })
   }
@@ -58,7 +58,7 @@ function logger(name) {
       subdomain: LOGGLY_SUBDOMAIN,
       inputToken: LOGGLY_TOKEN,
       json: true,
-      tags: ['NodeJS'].concat(LOGGLY_TAGS)
+      tags: ['NodeJS'].concat(LOGGLY_TAGS).concat(name)
     })
   }
 
