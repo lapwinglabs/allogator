@@ -7,7 +7,7 @@ var Console = require('./console.js').Console;
 var fmt = require('util').format;
 var production = ('production' == process.env.NODE_ENV)
 
-var SLACK_LOG_WEBHOOK = process.env.SLACK_LOG_HOOK
+var SLACK_LOG_WEBHOOK = process.env.SLACK_LOG_WEBHOOK
 var SLACK_LOG_CHANNEL = process.env.SLACK_LOG_CHANNEL
 
 var LOGGLY_TOKEN = process.env.LOGGLY_TOKEN
@@ -43,7 +43,7 @@ function logger(name) {
     ]
   })
 
-  if (SLACK_WEBHOOK && SLACK_CHANNEL) {
+  if (SLACK_LOG_WEBHOOK && SLACK_LOG_CHANNEL) {
     logger.use(slack, {
       level: 'warn',
       webhook_url: SLACK_LOG_WEBHOOK,

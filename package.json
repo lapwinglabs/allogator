@@ -1,6 +1,6 @@
 {
   "name": "allogator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easily pipe logs to different services by setting environment variables",
   "dependencies": {
     "winston": "^0.8.3",
