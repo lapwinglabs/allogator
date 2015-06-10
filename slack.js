@@ -1,3 +1,5 @@
+var fmt = require('util').format;
+
 /**
  * Format slack message
  *

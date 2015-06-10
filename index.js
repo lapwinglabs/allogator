@@ -4,8 +4,6 @@ var slackFormatter = require('./slack.js')
 var loggly = require('winston-loggly').Loggly;
 var Logger = require('winston-chains');
 var Console = require('./console.js').Console;
-var fmt = require('util').format;
-var production = ('production' == process.env.NODE_ENV)
 
 var SLACK_LOG_WEBHOOK = process.env.SLACK_LOG_WEBHOOK
 var SLACK_LOG_CHANNEL = process.env.SLACK_LOG_CHANNEL
@@ -23,7 +21,7 @@ var LOGENTRIES_TOKEN = process.env.LOGENTRIES_TOKEN
 module.exports = logger
 
 /**
- * Initialize the production `log` singleton
+ * Initialize the log with the given name
  *
  * @return {Log}
  * @api public
