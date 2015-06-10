@@ -1,0 +1,35 @@
+{
+  "name": "allogator",
+  "version": "0.0.1",
+  "description": "Easily pipe logs to different services by setting environment variables",
+  "dependencies": {
+    "winston": "^0.8.3",
+    "winston-bishop-slack": "^0.2.1",
+    "winston-chains": "0.0.1",
+    "winston-logentries": "^1.0.1",
+    "winston-loggly": "^1.0.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lapwinglabs/allogator"
+  },
+  "keywords": [
+    "logging",
+    "log",
+    "slack",
+    "papertrail",
+    "loggly",
+    "logentries",
+    "winston"
+  ],
+  "author": "Lapwing Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lapwinglabs/allogator/issues"
+  },
+  "homepage": "https://github.com/lapwinglabs/allogator"
+}
