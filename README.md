@@ -7,6 +7,22 @@ Switch logging services on and off in any project by simply setting environment 
 
 *Returns a winston-chains instance*
 
+
+# Usage
+
+```js
+var logger = require('allogator')
+var log = logger('myLog')
+
+log.info('hello') // info: [myLog] hello
+log.error('error') // error: [myLog] error
+log.warn('warn') // warn: [myLog] warn
+
+```
+
+
+# Setting Environment Variables
+
 #### Set the following environment variables to turn on any of the services below
 
 ##### Slack
