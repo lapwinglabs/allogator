@@ -7,6 +7,7 @@ Switch logging services on and off in any project by simply setting environment 
 
 *Returns a winston-chains instance*
 
+
 # Usage
 
 ```js
@@ -18,6 +19,7 @@ log.error('error') // error: [myLog] error
 log.warn('warn') // warn: [myLog] warn
 
 ```
+
 
 # Setting Environment Variables
 
